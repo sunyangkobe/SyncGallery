@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources>
+	<string name="adjust">Orientação</string>
+	<string name="back_enhance_label">Iluminação de Fundo</string>
+	<string name="balance_enhance_label">Balanço</string>
+	<string name="custom">Personalizado</string>
+	<string name="edit_your_photo">Editor de Fotos</string>
+	<string name="effects">Efeitos</string>
+	<string name="enhance">Realçar</string>
+	<string name="feather_plugin_filter_andy_name">Strato</string>
+	<string name="feather_plugin_filter_aqua_name">Aqua</string>
+	<string name="feather_plugin_filter_edgewood_name">Laguna</string>
+	<string name="feather_plugin_filter_indiglow_name">Indiglow</string>
+	<string name="feather_plugin_filter_joecool_name">Ventura</string>
+	<string name="feather_plugin_filter_sancarmen_name">San Carmen</string>
+	<string name="feather_plugin_filter_singe_name">Chamuscado</string>
+	<string name="feather_plugin_filter_softfocus_name">Foco Suave</string>
+	<string name="feather_plugin_filter_thresh_name">Concorde</string>
+	<string name="feather_plugin_filter_undefined_name">Original</string>
+	<string name="feather_plugin_filter_vivid_name">Vívido</string>
+	<string name="filter_name">Original</string>
+	<string name="get_more">Obter Mais</string>
+	<string name="mirror">Espelho</string>
+	<string name="night_enhance_label">Noite</string>
+	<string name="original">Original</string>
+	<string name="sharpen">Nitidez</string>
+	<string name="square">Quadrado</string>
+</resources>

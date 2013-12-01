@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.utoronto.syncgallery"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="8" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.SHAKE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature android:name="android.hardware.camera.flash" />
+    <uses-feature android:name="android.hardware.camera.front" />
+
+    <application
+        android:debuggable="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:theme="@style/FeatherDefaultTheme.Custom" >
+        <activity
+            android:name=".SyncGalleryActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SearchActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:launchMode="singleTop" >
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        <activity
+            android:name=".AlbumActivity"
+			android:configChanges="orientation|keyboardHidden"
+            android:label="@string/gallery"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.default_searchable"
+                android:value=".SearchActivity" />
+        </activity>
+        <activity
+            android:name=".ViewpicActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/fullscreen"
+            android:launchMode="singleTop" >
+            <intent-filter>
+                <action android:name="android.intent.action.FULLSCREEN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.dropbox.client2.android.AuthActivity"
+            android:configChanges="orientation|keyboard"
+            android:launchMode="singleTask" >
+            <intent-filter>
+
+                <!-- Change this to be db- followed by your app key -->
+                <data android:scheme="db-3lzsalfwubb7bpw" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".utils.DropboxAuthSession"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.utoronto.syncgallery.DROPBOXAUTHENTICATE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".DropboxSyncActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.utoronto.syncgallery.DROPBOXSYNC" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.aviary.android.feather.FeatherActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:hardwareAccelerated="true"
+            android:largeHeap="true"
+            android:screenOrientation="unspecified"
+            android:theme="@style/FeatherDefaultTheme.Custom" />
+        <activity
+            android:name="com.bumptech.bumpapi.BumpAPI"
+            android:configChanges="keyboardHidden|orientation"
+            android:theme="@style/BumpDialog" />
+        <activity
+            android:name="com.bumptech.bumpapi.EditTextActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:theme="@style/BumpDialog" />
+
+        <receiver
+            android:name="com.aviary.android.feather.receivers.FeatherSystemReceiver"
+            android:exported="true"
+            android:process=":feather_system_receiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+                <action android:name="android.intent.action.PACKAGE_REPLACED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

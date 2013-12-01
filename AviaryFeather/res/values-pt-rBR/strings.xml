@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources>
+	<string name="adjust">Orientação</string>
+	<string name="apply">Aplicar</string>
+	<string name="auto_enhance_label">Auto</string>
+	<string name="back_enhance_label">Iluminação de fundo</string>
+	<string name="balance_enhance_label">Equilíbrio</string>
+	<string name="blemish">Mancha</string>
+	<string name="brightness">Brilho</string>
+	<string name="confirm_quit_message">Espere! Você não salvou as mudanças. Tem certeza que quer fechar este editor?</string>
+	<string name="contrast">Contraste</string>
+	<string name="crop">Cortar</string>
+	<string name="custom">Personalizar</string>
+	<string name="draw">Desenhar</string>
+	<string name="edit_bottom_text">Editar subescrito</string>
+	<string name="edit_top_text">Editar sobrescrito</string>
+	<string name="edit_your_photo">Editor de fotos</string>
+	<string name="effect_loading_message">Aplicando Efeitos</string>
+	<string name="effects">Efeitos</string>
+	<string name="enhance">Realçar</string>
+	<string name="enter_text_here">Inserir texto aqui</string>
+	<string name="feather_close">Fechar</string>
+	<string name="filter_name">Original</string>
+	<string name="get_more">Obter mais</string>
+	<string name="infoscreen_text">Aviary é um SDK disponível para iOS e Android que permite que você adicione funções para editar fotos e efeitos ao seu aplicativo com apenas poucas linhas de código.</string>
+	<string name="keep_editing">Seguir editando</string>
+	<string name="meme">Meme</string>
+	<string name="menu_cancel">Cancelar</string>
+	<string name="menu_reset">Restabelecer</string>
+	<string name="mirror">Espelho</string>
+	<string name="night_enhance_label">Noite</string>
+	<string name="original">Original</string>
+	<string name="red_eye">Olhos</string>
+	<string name="rotate">Girar</string>
+	<string name="saturation">Saturação</string>
+	<string name="save">Feito</string>
+	<string name="sharpen">Nitidez</string>
+	<string name="square">Quadrado</string>
+	<string name="stickers">Adesivos</string>
+	<string name="text">Texto</string>
+	<string name="tool">Ferramenta</string>
+	<string name="tool_leave_question">Tem certeza que quer eliminar as mudanças feitas com esta ferramenta?</string>
+	<string name="whiten">Iluminar</string>
+</resources>

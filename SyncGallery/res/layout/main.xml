@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/main_bg"
+    android:baselineAligned="false"
+    android:orientation="vertical"
+    android:weightSum="1.0" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_margin="20dip"
+        android:layout_weight=".60"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/logo" />
+
+
+    <LinearLayout
+        android:id="@+id/main_buttons"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight=".40" 
+        android:layout_margin="20dip"
+        android:orientation="vertical" 
+        android:gravity="center_vertical">
+
+        <Button
+            android:id="@+id/connect2cloud"
+            android:layout_width="fill_parent"
+            android:layout_height="35dip"
+            android:layout_marginBottom="20dip"
+            android:background="#88ffffff"
+            android:text="@string/connect"
+            android:textSize="25sp"
+            android:typeface="sans" />
+
+        <Button
+            android:id="@+id/offline_gallery"
+            android:layout_width="fill_parent"
+            android:layout_height="35dip"
+            android:background="#88ffffff"
+            android:text="@string/gallery"
+            android:textSize="25sp"
+            android:typeface="sans" />
+    </LinearLayout>
+
+</LinearLayout>

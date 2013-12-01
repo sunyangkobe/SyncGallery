@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- SyncGallery+ welcome starts -->
+    <string name="hello">Hello World, SyncGalleryActivity!</string>
+    <string name="app_name">SyncGallery+</string>
+    <string name="connect">Connect to Cloud</string>
+    <string name="gallery">Gallery</string>
+    <!-- SyncGallery+ welcome ends -->
+    
+    <!-- SyncGallery+ menu buttons starts -->
+    <string name="camera">Camera</string>
+    <string name="search">Search</string>
+    <string name="search_hint">Search Image</string>
+    <string name="receive">Receive</string>
+    <string name="sync">Sync</string>
+    <string name="fullscreen">Full Screen</string>
+    <string name="logout">Logout</string>
+    <string name="edit">Edit</string>
+    <string name="create">Creat a new folder</string>
+    <string name="add">New</string>
+    <!-- SyncGallery+ menu buttons ends -->
+    <string name="home">Home</string>
+
+</resources>
